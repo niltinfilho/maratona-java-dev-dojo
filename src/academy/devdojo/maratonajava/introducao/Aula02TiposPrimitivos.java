@@ -2,6 +2,7 @@ package academy.devdojo.maratonajava.introducao;
 
 public class Aula02TiposPrimitivos {
     public static void main(String[] args) {
+        // Tipos primitivos
         // int, double, float, char, byte, short, long, boolean
         byte idadeByte = -128; // 1 byte -> -128 a 127
         short idadeShort = 32767; // 2 bytes -> -32.768 a 32.767
@@ -24,5 +25,9 @@ public class Aula02TiposPrimitivos {
         System.out.println("caractere unicode: " + caractereUnicode);
         System.out.println("casting para int: " + castingInt);
         System.out.println("casting para float: " + castingFloat);
+
+        // Tipo referencial
+        String texto = "Um graaaaande texto, sem necessariamente um limite";
+        System.out.println("String: " + texto);
     }
 }

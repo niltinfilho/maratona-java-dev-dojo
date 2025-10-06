@@ -7,8 +7,10 @@ public class Aula02TiposPrimitivos {
         short idadeShort = 32767; // 2 bytes -> -32.768 a 32.767
         int idade = 10;
         long numeroGrande = 100000;
-        float salarioFloat = 2500;
-        double salarioDouble = 2000;
+        int castingInt = (int) 10000000000L; // casting -> long forçado a caber dentro de um int | o java quebra os bits para fazer caber
+        float salarioFloat = 2500.0F;
+        double salarioDouble = 2000.0;
+        float castingFloat = (float) 2500.0D;  // casting -> double forçado a caber dentro de um float | nesse caso coube
         boolean verdadeiro = true;
         boolean falso = false;
         char caractereLetra = 'M';
@@ -16,9 +18,11 @@ public class Aula02TiposPrimitivos {
         char caractereUnicode = '\u004E';
 
         System.out.println("A idade é " + idade + " anos");
-        System.out.println(verdadeiro);
-        System.out.println(caractereLetra);
-        System.out.println(caractereAscii);
-        System.out.println(caractereUnicode);
+        System.out.println("boolean: " + verdadeiro);
+        System.out.println("caractere letra: " + caractereLetra);
+        System.out.println("caractere ascii: " + caractereAscii);
+        System.out.println("caractere unicode: " + caractereUnicode);
+        System.out.println("casting para int: " + castingInt);
+        System.out.println("casting para float: " + castingFloat);
     }
 }

@@ -2,6 +2,7 @@ package academy.devdojo.maratonajava.introducao;
 
 public class Aula04Operadores {
     public static void main(String[] args) {
+        // + - / *
         int numero01 = 10;
         int numero02 = 20;
         // O operador de adição (+) é sobrecarregado, ou seja,
@@ -20,5 +21,22 @@ public class Aula04Operadores {
         double numero04 = 10;
         resultado = numero04 / numero03; // agora um dos valores é do tipo double, entao o resultado vai ser double
         System.out.println("Divisao double: " + resultado);
+
+        // % -> resto da divisao
+        int resto = 21 % 7;
+        System.out.println("resto da divisao: " + resto);
+
+        // < > <= >= == !=
+        boolean isDezMaiorQueVinte = 10 > 20;
+        System.out.println("isDezMaiorQueVinte: " + isDezMaiorQueVinte);
+
+        boolean isDezMenorQueVinte = 10 < 20;
+        System.out.println("isDezMenorQueVinte: " + isDezMenorQueVinte);
+
+        boolean isDezIgualDez = 10 == 10;
+        System.out.println("isDezIgualDez: " + isDezIgualDez);
+
+        boolean isDezDiferenteDez = 10 != 10;
+        System.out.println("isDezDiferenteDez: " + isDezDiferenteDez);
     }
 }

@@ -3,6 +3,10 @@ package academy.devdojo.maratonajava.javacore.Hheranca.dominio;
 public class Funcionario extends Pessoa {
     private double salario;
 
+    public Funcionario(String nome) {
+        super(nome);
+    }
+
     // esse método sobrescreve o metodo original da classe Pessoa,
     // mas só é executado dentro do objeto Funcionario
     public void imprime() {

@@ -3,9 +3,12 @@ package academy.devdojo.maratonajava.javacore.Hheranca.dominio;
 public class Funcionario extends Pessoa {
     private double salario;
 
-//    public Funcionario(double salario) {
-//        this.salario = salario;
-//    }
+    // esse método sobrescreve o metodo original da classe Pessoa,
+    // mas só é executado dentro do objeto Funcionario
+    public void imprime() {
+        super.imprime(); // e esse "super" puxa as acoes do metodo original para serem executadas aqui tbm
+        System.out.println(this.salario);
+    }
 
     public double getSalario() {
         return salario;

@@ -9,7 +9,7 @@ public class CarroTeste01 {
         Carro carro3 = new Carro("GT-R Skyline", 320);
 
         // Ele nao muda a velocidade de um carro em especifico, ele muda a velocidade do "molde" que faz o carro, ou seja, todos
-        Carro.velocidadeLimite = 180;
+        Carro.setVelocidadeLimite(180);
 
         carro1.imprime();
         carro2.imprime();

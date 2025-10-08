@@ -4,7 +4,7 @@ public class Carro {
     private String nome;
     private double velocidadeMaxima;
     // agora, com o static, o atributo faz parte do objeto Carro, e nao mais das instancias
-    public static double velocidadeLimite = 250;
+    private static double velocidadeLimite = 250;
 
     public Carro(String nome, double velocidadeMaxima) {
         this.nome = nome;
@@ -16,6 +16,14 @@ public class Carro {
         System.out.println("Nome: " + this.nome);
         System.out.println("velocidadeMaxima: " + this.velocidadeMaxima);
         System.out.println("velocidadeLimite: " + Carro.velocidadeLimite);
+    }
+
+    public static void setVelocidadeLimite(double velocidadeLimite) {
+        Carro.velocidadeLimite = velocidadeLimite;
+    }
+
+    public static double getVelocidadeLimite() {
+        return Carro.velocidadeLimite;
     }
 
     public String getNome() {

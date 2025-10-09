@@ -20,4 +20,11 @@ public class DataBaseLoader implements DataLoader, DataRemover {
     public void checkPermission() {
         System.out.println("Checando permissoes no banco de dados");
     }
+
+    // esse metodo nao esta sobrescresvendo o metodo da interface DataLoader, sao coisas diferentes.
+    // aquele metodo ainda continua sendo executado, ao mesmo tempo que esse tambem pode ser executado.
+    // sao metodos diferentes, mas com o mesmo nome -> nao ha sobrescrita
+    public static void retrieveMaxDataSize() {
+        System.out.println("Dentro do retrieveMaxDataSize na classe DataBaseLoader");
+    }
 }

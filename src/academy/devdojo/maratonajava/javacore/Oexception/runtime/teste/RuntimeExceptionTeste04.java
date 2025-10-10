@@ -7,24 +7,16 @@ public class RuntimeExceptionTeste04 {
     public static void main(String[] args) {
         try {
             throw new RuntimeException();
-        } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("Dentro do ArrayIndexOutOfBoundsException");
-        } catch (IndexOutOfBoundsException e) {
-            System.out.println("Dentro do IndexOutOfBoundsException");
-        } catch (IllegalArgumentException e) {
-            System.out.println("Dentro do IllegalArgumentException");
-        } catch (ArithmeticException e) {
-            System.out.println("Dentro do ArithmeticException");
-        } catch (RuntimeException e) { // esse tipo mais generico (pai de todas acima) só pode ser pegado no final, por conta do polimorfismo
+        } catch (ArrayIndexOutOfBoundsException | IllegalArgumentException | ArithmeticException e) {
+            System.out.println("Dentro do ArrayIndexOutOfBoundsException | IllegalArgumentException | ArithmeticException");
+        } catch (RuntimeException e) {
             System.out.println("Dentro do RuntimeException");
         }
 
         try {
             talvezLanceException();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+        } catch (SQLException | FileNotFoundException e) { // nao é possivel fazer isso quando se tem excecoes na mesma linha de heranca
+            e.printStackTrace();
         }
     }
 

@@ -32,6 +32,5 @@ public class WrapperTeste01 {
         System.out.println("isLowerCase: " + Character.isLowerCase('A'));
         System.out.println("toUpperCase: " + Character.toUpperCase('a'));
         System.out.println("toLowerCase: " + Character.toLowerCase('A'));
-
     }
 }

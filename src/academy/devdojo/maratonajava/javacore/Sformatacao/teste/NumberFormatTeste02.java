@@ -3,17 +3,17 @@ package academy.devdojo.maratonajava.javacore.Sformatacao.teste;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-public class NumberFormatTeste01 {
+public class NumberFormatTeste02 {
     public static void main(String[] args) {
-        Locale localeBR = new Locale("pt", "BR");
+        Locale localeUS = new Locale("en", "US");
         Locale localeJP = Locale.JAPAN;
         Locale localeIT = Locale.ITALY;
         NumberFormat[] nfa = new NumberFormat[4];
 
-        nfa[0] = NumberFormat.getInstance();
-        nfa[1] = NumberFormat.getInstance(localeBR);
-        nfa[2] = NumberFormat.getInstance(localeJP);
-        nfa[3] = NumberFormat.getInstance(localeIT);
+        nfa[0] = NumberFormat.getCurrencyInstance();
+        nfa[1] = NumberFormat.getCurrencyInstance(localeUS);
+        nfa[2] = NumberFormat.getCurrencyInstance(localeJP);
+        nfa[3] = NumberFormat.getCurrencyInstance(localeIT);
 
         double valor = 100_000_000.2130;
 

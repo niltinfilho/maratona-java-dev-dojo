@@ -3,7 +3,7 @@ package academy.devdojo.maratonajava.javacore.Wnio.teste;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class PathTeste03 {
+public class ResolveTeste01 {
     public static void main(String[] args) {
         Path dir = Paths.get("home/nilto");
         Path arquivo = Paths.get("dev/arquivo.txt");

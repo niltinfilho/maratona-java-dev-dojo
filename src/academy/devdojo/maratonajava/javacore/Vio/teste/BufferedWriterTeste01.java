@@ -9,10 +9,10 @@ public class BufferedWriterTeste01 {
     public static void main(String[] args) {
         File file = new File("file.txt");
         try (FileWriter fw = new FileWriter(file, true);
-             BufferedWriter br = new BufferedWriter(fw)) {
-            br.write("O DevDojo é o melhor curso de Java do Brasil");
-            br.newLine();
-            br.flush();
+             BufferedWriter bw = new BufferedWriter(fw)) {
+            bw.write("O DevDojo é o melhor curso de Java do Brasil");
+            bw.newLine();
+            bw.flush();
         } catch (IOException e) {
             e.printStackTrace();
         }

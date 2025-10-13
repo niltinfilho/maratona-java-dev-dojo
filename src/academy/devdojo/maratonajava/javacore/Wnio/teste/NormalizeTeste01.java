@@ -13,6 +13,5 @@ public class NormalizeTeste01 {
         Path path2 = Paths.get("/home/./nilto/./dev/");
         System.out.println(path2);
         System.out.println(path2.normalize());
-
     }
 }

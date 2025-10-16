@@ -17,6 +17,6 @@ public class StreamTeste04 {
                 .map(w -> w.split(""))
                 .flatMap(Arrays::stream)
                 .collect(Collectors.toList());
-        System.out.println(letters );
+        System.out.println(letters);
     }
 }

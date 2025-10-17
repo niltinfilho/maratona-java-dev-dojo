@@ -13,8 +13,9 @@ public class ConnectionFactoryTeste01 {
 //        ProducerService.save(producer);
 //        ProducerService.delete(6);
 //        ProducerService.update(producerToUpdate);
-        List<Producer> producers = ProducerService.findAll();
+//        List<Producer> producers = ProducerService.findAll();
 //        List<Producer> producers = ProducerService.findByName("Mad");
-        System.out.println("Producers found: " + producers);
+//        System.out.println("Producers found: " + producers);
+        ProducerService.showProducerMetaData();
     }
 }
